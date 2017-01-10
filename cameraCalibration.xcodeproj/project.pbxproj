@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A8073FB61D7FBFC1003A4BE3 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = A8073FB51D7FBFC1003A4BE3 /* README.md */; };
 		A80CAEDE1E24BDBA00A7C8A8 /* imagelist_creator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A80CAEDD1E24BDBA00A7C8A8 /* imagelist_creator.cpp */; };
 		A80CAEE01E24C41400A7C8A8 /* takePhoto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A80CAEDF1E24C41400A7C8A8 /* takePhoto.cpp */; };
 		A89E1B841E2279DD00C10C9F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A89E1B831E2279DD00C10C9F /* main.cpp */; };
@@ -59,6 +58,9 @@
 		A80CAED61E24BCE100A7C8A8 /* imageListCreator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = imageListCreator; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80CAEDD1E24BDBA00A7C8A8 /* imagelist_creator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imagelist_creator.cpp; sourceTree = "<group>"; };
 		A80CAEDF1E24C41400A7C8A8 /* takePhoto.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = takePhoto.cpp; sourceTree = "<group>"; };
+		A80CAEE11E24CA4100A7C8A8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A80CAEE21E24CA7900A7C8A8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A80CAEE31E24CAE800A7C8A8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A89E1B811E2279DD00C10C9F /* cameraFrameRate */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cameraFrameRate; sourceTree = BUILT_PRODUCTS_DIR; };
 		A89E1B831E2279DD00C10C9F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		A8FF47F31D43189500773D34 /* cameraCalibration */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cameraCalibration; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				A80CAEDF1E24C41400A7C8A8 /* takePhoto.cpp */,
+				A80CAEE11E24CA4100A7C8A8 /* README.md */,
 			);
 			path = takePhoto;
 			sourceTree = "<group>";
@@ -110,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				A80CAEDD1E24BDBA00A7C8A8 /* imagelist_creator.cpp */,
+				A80CAEE21E24CA7900A7C8A8 /* README.md */,
 			);
 			path = imageListCreator;
 			sourceTree = "<group>";
@@ -150,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				A8FF48031D4322D300773D34 /* calibration.cpp */,
+				A80CAEE31E24CAE800A7C8A8 /* README.md */,
 			);
 			path = cameraCalibration;
 			sourceTree = "<group>";
@@ -297,7 +302,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8073FB61D7FBFC1003A4BE3 /* README.md in Sources */,
 				A8FF48041D4322D300773D34 /* calibration.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
