@@ -7,10 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A8073FB61D7FBFC1003A4BE3 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = A8073FB51D7FBFC1003A4BE3 /* README.md */; };
+		A80CAEDE1E24BDBA00A7C8A8 /* imagelist_creator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A80CAEDD1E24BDBA00A7C8A8 /* imagelist_creator.cpp */; };
+		A80CAEE01E24C41400A7C8A8 /* takePhoto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A80CAEDF1E24C41400A7C8A8 /* takePhoto.cpp */; };
+		A89E1B841E2279DD00C10C9F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A89E1B831E2279DD00C10C9F /* main.cpp */; };
 		A8FF48041D4322D300773D34 /* calibration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8FF48031D4322D300773D34 /* calibration.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		A80358811DE481B000274EE3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		A80CAED41E24BCE100A7C8A8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		A89E1B7F1E2279DD00C10C9F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		A8FF47F11D43189500773D34 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -23,11 +54,40 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A80358831DE481B000274EE3 /* takePhoto */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = takePhoto; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8073FB51D7FBFC1003A4BE3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A80CAED61E24BCE100A7C8A8 /* imageListCreator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = imageListCreator; sourceTree = BUILT_PRODUCTS_DIR; };
+		A80CAEDD1E24BDBA00A7C8A8 /* imagelist_creator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imagelist_creator.cpp; sourceTree = "<group>"; };
+		A80CAEDF1E24C41400A7C8A8 /* takePhoto.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = takePhoto.cpp; sourceTree = "<group>"; };
+		A89E1B811E2279DD00C10C9F /* cameraFrameRate */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cameraFrameRate; sourceTree = BUILT_PRODUCTS_DIR; };
+		A89E1B831E2279DD00C10C9F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		A8FF47F31D43189500773D34 /* cameraCalibration */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cameraCalibration; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8FF48031D4322D300773D34 /* calibration.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = calibration.cpp; sourceTree = "<group>"; };
+		A8FF48201D47650700773D34 /* camera1.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = camera1.yaml; path = build/Debug/camera1.yaml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A80358801DE481B000274EE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80CAED31E24BCE100A7C8A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A89E1B7E1E2279DD00C10C9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A8FF47F01D43189500773D34 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -38,11 +98,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A80358841DE481B000274EE3 /* takePhoto */ = {
+			isa = PBXGroup;
+			children = (
+				A80CAEDF1E24C41400A7C8A8 /* takePhoto.cpp */,
+			);
+			path = takePhoto;
+			sourceTree = "<group>";
+		};
+		A80CAED71E24BCE100A7C8A8 /* imageListCreator */ = {
+			isa = PBXGroup;
+			children = (
+				A80CAEDD1E24BDBA00A7C8A8 /* imagelist_creator.cpp */,
+			);
+			path = imageListCreator;
+			sourceTree = "<group>";
+		};
+		A89E1B821E2279DD00C10C9F /* cameraFrameRate */ = {
+			isa = PBXGroup;
+			children = (
+				A89E1B831E2279DD00C10C9F /* main.cpp */,
+			);
+			path = cameraFrameRate;
+			sourceTree = "<group>";
+		};
 		A8FF47EA1D43189500773D34 = {
 			isa = PBXGroup;
 			children = (
+				A8073FB51D7FBFC1003A4BE3 /* README.md */,
 				A8FF47F51D43189500773D34 /* cameraCalibration */,
+				A80358841DE481B000274EE3 /* takePhoto */,
+				A89E1B821E2279DD00C10C9F /* cameraFrameRate */,
+				A80CAED71E24BCE100A7C8A8 /* imageListCreator */,
 				A8FF47F41D43189500773D34 /* Products */,
+				A8FF48201D47650700773D34 /* camera1.yaml */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,6 +139,9 @@
 			isa = PBXGroup;
 			children = (
 				A8FF47F31D43189500773D34 /* cameraCalibration */,
+				A80358831DE481B000274EE3 /* takePhoto */,
+				A89E1B811E2279DD00C10C9F /* cameraFrameRate */,
+				A80CAED61E24BCE100A7C8A8 /* imageListCreator */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +157,57 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A80358821DE481B000274EE3 /* takePhoto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A80358871DE481B000274EE3 /* Build configuration list for PBXNativeTarget "takePhoto" */;
+			buildPhases = (
+				A803587F1DE481B000274EE3 /* Sources */,
+				A80358801DE481B000274EE3 /* Frameworks */,
+				A80358811DE481B000274EE3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = takePhoto;
+			productName = takePhoto;
+			productReference = A80358831DE481B000274EE3 /* takePhoto */;
+			productType = "com.apple.product-type.tool";
+		};
+		A80CAED51E24BCE100A7C8A8 /* imageListCreator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A80CAEDC1E24BCE100A7C8A8 /* Build configuration list for PBXNativeTarget "imageListCreator" */;
+			buildPhases = (
+				A80CAED21E24BCE100A7C8A8 /* Sources */,
+				A80CAED31E24BCE100A7C8A8 /* Frameworks */,
+				A80CAED41E24BCE100A7C8A8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = imageListCreator;
+			productName = imageListCreator;
+			productReference = A80CAED61E24BCE100A7C8A8 /* imageListCreator */;
+			productType = "com.apple.product-type.tool";
+		};
+		A89E1B801E2279DD00C10C9F /* cameraFrameRate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A89E1B871E2279DD00C10C9F /* Build configuration list for PBXNativeTarget "cameraFrameRate" */;
+			buildPhases = (
+				A89E1B7D1E2279DD00C10C9F /* Sources */,
+				A89E1B7E1E2279DD00C10C9F /* Frameworks */,
+				A89E1B7F1E2279DD00C10C9F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cameraFrameRate;
+			productName = cameraFrameRate;
+			productReference = A89E1B811E2279DD00C10C9F /* cameraFrameRate */;
+			productType = "com.apple.product-type.tool";
+		};
 		A8FF47F21D43189500773D34 /* cameraCalibration */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8FF47FA1D43189500773D34 /* Build configuration list for PBXNativeTarget "cameraCalibration" */;
@@ -91,6 +234,15 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = WeiTingChen;
 				TargetAttributes = {
+					A80358821DE481B000274EE3 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					A80CAED51E24BCE100A7C8A8 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					A89E1B801E2279DD00C10C9F = {
+						CreatedOnToolsVersion = 7.2;
+					};
 					A8FF47F21D43189500773D34 = {
 						CreatedOnToolsVersion = 7.2;
 					};
@@ -109,15 +261,43 @@
 			projectRoot = "";
 			targets = (
 				A8FF47F21D43189500773D34 /* cameraCalibration */,
+				A80358821DE481B000274EE3 /* takePhoto */,
+				A89E1B801E2279DD00C10C9F /* cameraFrameRate */,
+				A80CAED51E24BCE100A7C8A8 /* imageListCreator */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A803587F1DE481B000274EE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A80CAEE01E24C41400A7C8A8 /* takePhoto.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80CAED21E24BCE100A7C8A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A80CAEDE1E24BDBA00A7C8A8 /* imagelist_creator.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A89E1B7D1E2279DD00C10C9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A89E1B841E2279DD00C10C9F /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A8FF47EF1D43189500773D34 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8073FB61D7FBFC1003A4BE3 /* README.md in Sources */,
 				A8FF48041D4322D300773D34 /* calibration.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -125,6 +305,84 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		A80358881DE481B000274EE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = (
+					"-lopencv_shape",
+					"-lopencv_stitching",
+					"-lopencv_objdetect",
+					"-lopencv_superres",
+					"-lopencv_videostab",
+					"-lopencv_calib3d",
+					"-lopencv_features2d",
+					"-lopencv_highgui",
+					"-lopencv_videoio",
+					"-lopencv_imgcodecs",
+					"-lopencv_video",
+					"-lopencv_photo",
+					"-lopencv_ml",
+					"-lopencv_imgproc",
+					"-lopencv_flann",
+					"-lopencv_core",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A80358891DE481B000274EE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = (
+					"-lopencv_shape",
+					"-lopencv_stitching",
+					"-lopencv_objdetect",
+					"-lopencv_superres",
+					"-lopencv_videostab",
+					"-lopencv_calib3d",
+					"-lopencv_features2d",
+					"-lopencv_highgui",
+					"-lopencv_videoio",
+					"-lopencv_imgcodecs",
+					"-lopencv_video",
+					"-lopencv_photo",
+					"-lopencv_ml",
+					"-lopencv_imgproc",
+					"-lopencv_flann",
+					"-lopencv_core",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A80CAEDA1E24BCE100A7C8A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A80CAEDB1E24BCE100A7C8A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A89E1B851E2279DD00C10C9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A89E1B861E2279DD00C10C9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		A8FF47F81D43189500773D34 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -161,9 +419,29 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/opt/opencv3/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/opt/opencv3/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lopencv_shape",
+					"-lopencv_stitching",
+					"-lopencv_objdetect",
+					"-lopencv_superres",
+					"-lopencv_videostab",
+					"-lopencv_calib3d",
+					"-lopencv_features2d",
+					"-lopencv_highgui",
+					"-lopencv_videoio",
+					"-lopencv_imgcodecs",
+					"-lopencv_video",
+					"-lopencv_photo",
+					"-lopencv_ml",
+					"-lopencv_imgproc",
+					"-lopencv_flann",
+					"-lopencv_core",
+				);
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -198,8 +476,28 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/opt/opencv3/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/opt/opencv3/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"-lopencv_shape",
+					"-lopencv_stitching",
+					"-lopencv_objdetect",
+					"-lopencv_superres",
+					"-lopencv_videostab",
+					"-lopencv_calib3d",
+					"-lopencv_features2d",
+					"-lopencv_highgui",
+					"-lopencv_videoio",
+					"-lopencv_imgcodecs",
+					"-lopencv_video",
+					"-lopencv_photo",
+					"-lopencv_ml",
+					"-lopencv_imgproc",
+					"-lopencv_flann",
+					"-lopencv_core",
+				);
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -207,31 +505,24 @@
 		A8FF47FB1D43189500773D34 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = (
-					/usr/local/include,
-					/opt/local/include,
-				);
-				LIBRARY_SEARCH_PATHS = (
-					/usr/local/lib,
-					/opt/local/lib,
-				);
+				HEADER_SEARCH_PATHS = /usr/local/opt/opencv3/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/opt/opencv3/lib;
 				OTHER_LDFLAGS = (
-					"-lopencv_calib3d",
-					"-lopencv_highgui",
-					"-lopencv_features2d",
-					"-lopencv_flann",
-					"-lopencv_highgui",
-					"-lopencv_imgcodecs",
-					"-lopencv_imgproc",
-					"-lopencv_ml",
-					"-lopencv_objdetect",
-					"-lopencv_photo",
 					"-lopencv_shape",
 					"-lopencv_stitching",
+					"-lopencv_objdetect",
 					"-lopencv_superres",
-					"-lopencv_video",
-					"-lopencv_videoio",
 					"-lopencv_videostab",
+					"-lopencv_calib3d",
+					"-lopencv_features2d",
+					"-lopencv_highgui",
+					"-lopencv_videoio",
+					"-lopencv_imgcodecs",
+					"-lopencv_video",
+					"-lopencv_photo",
+					"-lopencv_ml",
+					"-lopencv_imgproc",
+					"-lopencv_flann",
 					"-lopencv_core",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -241,31 +532,24 @@
 		A8FF47FC1D43189500773D34 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = (
-					/usr/local/include,
-					/opt/local/include,
-				);
-				LIBRARY_SEARCH_PATHS = (
-					/usr/local/lib,
-					/opt/local/lib,
-				);
+				HEADER_SEARCH_PATHS = /usr/local/opt/opencv3/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/opt/opencv3/lib;
 				OTHER_LDFLAGS = (
-					"-lopencv_calib3d",
-					"-lopencv_highgui",
-					"-lopencv_features2d",
-					"-lopencv_flann",
-					"-lopencv_highgui",
-					"-lopencv_imgcodecs",
-					"-lopencv_imgproc",
-					"-lopencv_ml",
-					"-lopencv_objdetect",
-					"-lopencv_photo",
 					"-lopencv_shape",
 					"-lopencv_stitching",
+					"-lopencv_objdetect",
 					"-lopencv_superres",
-					"-lopencv_video",
-					"-lopencv_videoio",
 					"-lopencv_videostab",
+					"-lopencv_calib3d",
+					"-lopencv_features2d",
+					"-lopencv_highgui",
+					"-lopencv_videoio",
+					"-lopencv_imgcodecs",
+					"-lopencv_video",
+					"-lopencv_photo",
+					"-lopencv_ml",
+					"-lopencv_imgproc",
+					"-lopencv_flann",
 					"-lopencv_core",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -275,6 +559,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A80358871DE481B000274EE3 /* Build configuration list for PBXNativeTarget "takePhoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80358881DE481B000274EE3 /* Debug */,
+				A80358891DE481B000274EE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A80CAEDC1E24BCE100A7C8A8 /* Build configuration list for PBXNativeTarget "imageListCreator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80CAEDA1E24BCE100A7C8A8 /* Debug */,
+				A80CAEDB1E24BCE100A7C8A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A89E1B871E2279DD00C10C9F /* Build configuration list for PBXNativeTarget "cameraFrameRate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A89E1B851E2279DD00C10C9F /* Debug */,
+				A89E1B861E2279DD00C10C9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A8FF47EE1D43189500773D34 /* Build configuration list for PBXProject "cameraCalibration" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -291,6 +601,7 @@
 				A8FF47FC1D43189500773D34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

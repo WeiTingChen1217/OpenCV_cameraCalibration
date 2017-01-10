@@ -1,5 +1,5 @@
 #include "opencv2/core.hpp"
-#include <opencv2/core/utility.hpp>
+#include "opencv2/core/utility.hpp"
 #include "opencv2/imgproc.hpp"
 #include "opencv2/calib3d.hpp"
 #include "opencv2/imgcodecs.hpp"
@@ -58,12 +58,12 @@ static void help()
         "                              #  of board views actually available)\n"
         "     [-d=<delay>]             # a minimum delay in ms between subsequent attempts to capture a next view\n"
         "                              # (used only for video capturing)\n"
-        "     [-s=<squareSize>]       # square size in some user-defined units (1 by default)\n"
+        "     [-s=<squareSize>]        # square size in some user-defined units (1 by default)\n"
         "     [-o=<out_camera_params>] # the output filename for intrinsic [and extrinsic] parameters\n"
         "     [-op]                    # write detected feature points\n"
         "     [-oe]                    # write extrinsic parameters\n"
         "     [-zt]                    # assume zero tangential distortion\n"
-        "     [-a=<aspectRatio>]      # fix aspect ratio (fx/fy)\n"
+        "     [-a=<aspectRatio>]       # fix aspect ratio (fx/fy)\n"
         "     [-p]                     # fix the principal point at the center\n"
         "     [-v]                     # flip the captured images around the horizontal axis\n"
         "     [-V]                     # use a video file, and not an image list, uses\n"
@@ -296,6 +296,7 @@ static bool runAndSave(const string& outputFilename,
 
 int main( int argc, char** argv )
 {
+    {
 //    argc = 9;
 //    argv[0] = "./cameraCalibration";
 //    argv[1] = "-w=11";
@@ -311,7 +312,7 @@ int main( int argc, char** argv )
 //    printf("%s\n", argv[2]);
 //    printf("%s\n", argv[3]);
 //    printf("%s\n", argv[4]);
-    
+    }
     
     Size boardSize, imageSize;
     float squareSize, aspectRatio;
@@ -330,7 +331,7 @@ int main( int argc, char** argv )
     int delay;
     clock_t prevTimestamp = 0;
     int mode = DETECTION;
-    int cameraId = 1;
+    int cameraId = 2;
     vector<vector<Point2f> > imagePoints;
     vector<string> imageList;
     Pattern pattern = CHESSBOARD;
@@ -378,7 +379,7 @@ int main( int argc, char** argv )
     if ( isdigit(parser.get<string>("@input_data")[0]) )
         cameraId = parser.get<int>("@input_data");
     else
-        inputFilename = parser.get<string>("@input_data");
+        inputFilename = parser.get<string>("@input_data");  //為 .xml 的檔案
     if (!parser.check())
     {
         help();
@@ -390,7 +391,7 @@ int main( int argc, char** argv )
         return fprintf( stderr, "Invalid board square width\n" ), -1;
     if ( nframes <= 3 )
         return printf("Invalid number of images\n" ), -1;
-    if ( aspectRatio <= 0 )
+    if ( aspectRatio <= 0 ) //寬高比
         return printf( "Invalid aspect ratio\n" ), -1;
     if ( delay <= 0 )
         return printf( "Invalid delay\n" ), -1;
@@ -399,6 +400,7 @@ int main( int argc, char** argv )
     if ( boardSize.height <= 0 )
         return fprintf( stderr, "Invalid board height\n" ), -1;
 
+    
     if( !inputFilename.empty() )
     {
         if( !videofile && readStringList(inputFilename, imageList) )
@@ -420,22 +422,29 @@ int main( int argc, char** argv )
 
     namedWindow( "Image View", 1 );
 
+    //改變輸出解析度
+    capture.set(CV_CAP_PROP_FRAME_HEIGHT, 480);
+    capture.set(CV_CAP_PROP_FRAME_WIDTH, 640);
+//    capture.set(CV_CAP_PROP_FRAME_HEIGHT, 240);
+//    capture.set(CV_CAP_PROP_FRAME_WIDTH, 320);
+    capture.set(CV_CAP_PROP_FPS, 120);
+    
     for(i = 0;;i++)
     {
-        Mat view, viewGray;
+        Mat view, viewGray;         //view：下面程式都會使用此變數來判斷影像
         bool blink = false;
-
-        if( capture.isOpened() )
+        
+        if( capture.isOpened() )    //判斷相機是否已開啟
         {
             Mat view0;
             capture >> view0;
-            view0.copyTo(view);
+            view0.copyTo(view);     //保留原始影像，建立一個副本
 
         }
-        else if( i < (int)imageList.size() )
+        else if( i < (int)imageList.size() )    //如果沒有偵測到相機，則直接讀取影像檔案
             view = imread(imageList[i], 1);
 
-        if(view.empty())
+        if(view.empty())    //看不懂
         {
             if( imagePoints.size() > 0 )
                 runAndSave(outputFilename, imagePoints, imageSize,
@@ -528,7 +537,7 @@ int main( int argc, char** argv )
             imagePoints.clear();
         }
         
-        //當沒有輸入 input data 時按下 g 及會開始拍攝照片，預設為 10。設定拍照次數方法為 [-o=<out_camera_params>]
+        //當沒有給 input data 時按下 g 及會開始拍攝照片，預設為 10。設定拍照次數方法為 [-o=<out_camera_params>]
         if( mode == CAPTURING && imagePoints.size() >= (unsigned)nframes )
         {
             if( runAndSave(outputFilename, imagePoints, imageSize,
