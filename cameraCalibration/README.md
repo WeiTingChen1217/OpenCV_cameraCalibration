@@ -11,5 +11,6 @@
 -pt=chessboard  pattern = chessboard（預設為 CHESSBOARD）
 -s=2            squareSize = 2公分
 -o=camera.yaml  校正後輸出的檔案名稱（副檔名為 .yaml）
+imagelist.xml   讀取圖片的表單
 
 若在執行該程式時沒有給 input_data 則可以按下 q 進入拍照模式，預設為 10 張，可輸入參數 -n=20 設定拍攝 20 張影像。

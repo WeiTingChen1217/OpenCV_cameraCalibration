@@ -130,10 +130,10 @@
 			isa = PBXGroup;
 			children = (
 				A8073FB51D7FBFC1003A4BE3 /* README.md */,
-				A8FF47F51D43189500773D34 /* cameraCalibration */,
 				A80358841DE481B000274EE3 /* takePhoto */,
-				A89E1B821E2279DD00C10C9F /* cameraFrameRate */,
 				A80CAED71E24BCE100A7C8A8 /* imageListCreator */,
+				A8FF47F51D43189500773D34 /* cameraCalibration */,
+				A89E1B821E2279DD00C10C9F /* cameraFrameRate */,
 				A8FF47F41D43189500773D34 /* Products */,
 				A8FF48201D47650700773D34 /* camera1.yaml */,
 			);
@@ -579,6 +579,7 @@
 				A80CAEDB1E24BCE100A7C8A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A89E1B871E2279DD00C10C9F /* Build configuration list for PBXNativeTarget "cameraFrameRate" */ = {
 			isa = XCConfigurationList;
