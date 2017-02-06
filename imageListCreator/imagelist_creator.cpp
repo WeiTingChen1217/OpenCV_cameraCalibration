@@ -1,4 +1,5 @@
-/*this creates a yaml or xml list of files from the command line args
+/*
+ this creates a yaml or xml list of files from the command line args
  */
 
 #include "opencv2/core.hpp"
