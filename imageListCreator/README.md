@@ -14,5 +14,5 @@
 
 #### imagelist.xml 檔
 
-![](https://github.com/WeiTingChen1217/OpenCV_cameraCalibration/blob/master/imageListCreator/Screen%20Shot%202017-02-08%20at%205.26.27%20PM.png)
+![fig](https://github.com/WeiTingChen1217/OpenCV_cameraCalibration/blob/master/imageListCreator/Screen%20Shot%202017-02-08%20at%205.26.27%20PM.png2)
 
