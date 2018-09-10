@@ -1,8 +1,12 @@
 ### 產生 imagelist.xml 的方法
 
-編譯 `imagelist_creater.cpp` 後 cd 至 `/cameraCalibration/build/Debug` 
+編譯 __imagelist_creater.cpp__ 後 cd 至 __/cameraCalibration/build/Debug__ 
 
-於 cmd 中輸入 `./imageListCreator imagelist.xml ../../dataBase/checkerboard/Picture1.jpg ../../dataBase/checkerboard/Picture2.jpg ../../dataBase/checkerboard/Picture3.jpg ../../dataBase/checkerboard/Picture4.jpg ../../dataBase/checkerboard/Picture5.jpg ../../dataBase/checkerboard/Picture6.jpg ../../dataBase/checkerboard/Picture7.jpg ../../dataBase/checkerboard/Picture8.jpg ../../dataBase/checkerboard/Picture9.jpg ../../dataBase/checkerboard/Picture10.jpg ../../dataBase/checkerboard/Picture11.jpg ../../dataBase/checkerboard/Picture12.jpg ../../dataBase/checkerboard/Picture13.jpg`
+於 cmd 中輸入 
+
+````
+./imageListCreator imagelist.xml ../../dataBase/checkerboard/Picture1.jpg ../../dataBase/checkerboard/Picture2.jpg ../../dataBase/checkerboard/Picture3.jpg ../../dataBase/checkerboard/Picture4.jpg ../../dataBase/checkerboard/Picture5.jpg ../../dataBase/checkerboard/Picture6.jpg ../../dataBase/checkerboard/Picture7.jpg ../../dataBase/checkerboard/Picture8.jpg ../../dataBase/checkerboard/Picture9.jpg ../../dataBase/checkerboard/Picture10.jpg ../../dataBase/checkerboard/Picture11.jpg ../../dataBase/checkerboard/Picture12.jpg ../../dataBase/checkerboard/Picture13.jpg
+````
 
 **參數說明**
 
@@ -14,5 +18,5 @@
 
 #### imagelist.xml 檔
 
-![ksmoakc](https://github.com/WeiTingChen1217/OpenCV_cameraCalibration/blob/master/imageListCreator/Screen%20Shot%202017-02-08%20at%205.26.27%20PM.png2 "abcd")
+![image](https://github.com/WeiTingChen1217/OpenCV_cameraCalibration/blob/master/imageListCreator/Screen%20Shot%202017-02-08%20at%205.26.27%20PM.png?raw=true)
 

@@ -13,6 +13,7 @@
 
 int main()
 {
+    std::cout<< "1" << std::endl ;
     IplImage *pImg = NULL;
     CvCapture *cap = cvCaptureFromCAM(0);
     char fileName[100];
